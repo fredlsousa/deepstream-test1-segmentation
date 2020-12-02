@@ -28,8 +28,9 @@ Now, check the ``dstest_segmentation_config_semantic.txt`` config file to change
 
 
 Now run the sample with an h264 video as input:
-<pre>
-  <code>
-    $ ./deepstream-test1-segmentation <path_to_h264_video>
-  </code>
-<pre> 
+
+
+<code>
+  $ ./deepstream-test1-segmentation <path_to_h264_video>
+</code>
+
