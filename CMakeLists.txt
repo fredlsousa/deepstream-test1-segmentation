@@ -11,8 +11,8 @@ message("-- COMPILE_TO_ARCH: ${LINUX_ARCH}")
 
 if("${LINUX_ARCH}" STREQUAL "aarch64")
     message("-- aarch64 Jetson TEGRA")
-    set(CMAKE_C_STANDARD 11)      # Use C instead of C++ in Jetson Platforms
-    # This set is meant form embedded compilation o Jetson platforms (Use CMAKE_C_STANDARD for C lang)
+    set(CMAKE_C_STANDARD 11) 
+    # This set is meant form embedded compilation o Jetson platforms
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -DPLATFORM_TEGRA")
 
 elseif("${LINUX_ARCH}" STREQUAL "x86_64")
