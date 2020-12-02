@@ -31,6 +31,6 @@ Now run the sample with an h264 video as input:
 
 
 <code>
-  $ ./deepstream-test1-segmentation <path_to_h264_video>
+  $ ./deepstream-test1-segmentation "path_to_h264_video"
 </code>
 
