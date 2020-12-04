@@ -51,5 +51,5 @@ file(GLOB SRCS2 ${PROJECT_SOURCE_DIR}/*.c ${PROJECT_SOURCE_DIR}/*.h)
 
 add_executable(deepstream-test1-segmentation ${SRCS1} ${SRCS2})
 
-target_link_libraries(deepstream-test1-segmentation -lnvdsgst_meta -lnvds_meta -lnvdsgst_helper -lnvds_utils -lgstrtp-1.0 -lm
+target_link_libraries(deepstream-test1-segmentation -lnvdsgst_meta -lrt -lnvds_meta -lnvdsgst_helper -lnvds_utils -lgstrtp-1.0 -lm
         -lgstreamer-1.0 -lgstrtspserver-1.0 -lglib-2.0 -lgobject-2.0 -lgstvideo-1.0)
