@@ -11,14 +11,15 @@ message("-- COMPILE_TO_ARCH: ${LINUX_ARCH}")
 
 if("${LINUX_ARCH}" STREQUAL "aarch64")
     message("-- aarch64 Jetson TEGRA")
-    set(CMAKE_C_STANDARD 11) 
-    # This set is meant form embedded compilation o Jetson platforms
-    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -DPLATFORM_TEGRA")
+    # set(CMAKE_C_STANDARD 11) 
+    # set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -DPLATFORM_TEGRA")
+    set(CMAKE_CXX_STANDARD 11)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DPLATFORM_TEGRA")
 
 elseif("${LINUX_ARCH}" STREQUAL "x86_64")
     message("-- X86 dGPU")
-    # set(CMAKE_CXX_STANDARD 17)  # If on Desktop, CPP can be used
-    set(CMAKE_C_STANDARD 11)
+    set(CMAKE_CXX_STANDARD 17)
+    # set(CMAKE_C_STANDARD 11)
 
 endif()
 
