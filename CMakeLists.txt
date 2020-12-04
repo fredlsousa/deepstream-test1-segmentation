@@ -13,6 +13,7 @@ if("${LINUX_ARCH}" STREQUAL "aarch64")
     message("-- aarch64 Jetson TEGRA")
     # set(CMAKE_C_STANDARD 11) 
     # set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -DPLATFORM_TEGRA")
+    # If you want to use C++ on Jetson, rename the source file from .c to .cpp
     set(CMAKE_CXX_STANDARD 11)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DPLATFORM_TEGRA")
 
